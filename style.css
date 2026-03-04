@@ -12,7 +12,10 @@ body {
 h1, h2 {
   text-align: center;
 }
-
+p {
+  max-width: 700px;
+  margin: 15px auto;
+}
 /* Make images responsive */
 img {
   max-width: 100%;
@@ -30,8 +33,6 @@ video {
 table {
   width: 100%;
   border-collapse: collapse;
-  overflow-x: auto;
-  display: block;
 }
 
 th, td {
@@ -43,13 +44,9 @@ th, td {
 /* Make content centered and readable */
 .container {
   max-width: 900px;
-  margin: auto;
-}
-.container {
-  max-width: 900px;
   margin: 40px auto;
-  background: white;
+  background: #1e293b;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
