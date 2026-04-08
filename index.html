@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Travel Booking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelWorld</title>
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-  <!-- Internal CSS -->
-  <style>
-    .highlight-internal {
-      color: orange;
-      font-weight: bold;
-    }
-  </style>
+<style>
+  .highlight-internal {
+    color: orange;
+    font-weight: bold;
+  }
+</style>
+
 </head>
-
 <body>
 
 <!-- NAVBAR -->
@@ -27,6 +25,7 @@
     <li><a href="#experience">Experience</a></li>
     <li><a href="#highlights">Highlights</a></li>
     <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking">Booking</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -35,7 +34,7 @@
 <section id="home" class="container">
   <h1>Explore The World 🌎</h1>
 
-  <!-- Inline CSS -->
+  <!-- INLINE CSS -->
   <p style="color: lightblue; font-style: italic;">
     Book your dream trips across the globe with ease.
   </p>
@@ -138,6 +137,28 @@
   <video controls width="100%">
     <source src="235FB328-35C8-4E37-A27F-1755E0570500.mp4" type="video/mp4">
   </video>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="container">
+  <h1>Book Your Trip 🛫</h1>
+
+  <form class="booking-form">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+
+    <select required>
+      <option value="">Select Destination</option>
+      <option>Dubai</option>
+      <option>United Kingdom</option>
+      <option>Australia</option>
+      <option>Canada</option>
+    </select>
+
+    <input type="date" required>
+
+    <button type="submit">Book Now</button>
+  </form>
 </section>
 
 <!-- CONTACT -->
