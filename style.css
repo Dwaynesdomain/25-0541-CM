@@ -1,14 +1,13 @@
-/* Reset */
+/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0f172a, #020617);
   color: #f1f5f9;
   line-height: 1.6;
-  padding: 15px;
 }
 
-/* Navbar */
+/* NAVBAR */
 nav {
   background: #020617;
   padding: 12px;
@@ -28,71 +27,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* Headings */
-h1, h2 {
-  text-align: center;
-}
-
-h1 {
-  color: #38bdf8;
-  animation: fadeIn 1s ease;
-}
-
-h2 {
-  color: #60a5fa;
-}
-
-/* Paragraphs */
-p {
-  max-width: 700px;
-  margin: 15px auto;
-}
-
-/* Images */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: 0.4s;
-}
-
-.img-box {
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.img-box:hover img {
-  transform: scale(1.1);
-}
-
-/* Video */
-video {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Table */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th {
-  background: #334155;
-}
-
-th, td {
-  padding: 8px;
-  border: 1px solid #334155;
-}
-
-tr:hover {
-  background: #1e293b;
-}
-
-/* Container */
+/* CONTAINER */
 .container {
   max-width: 1000px;
   margin: 40px auto;
@@ -100,35 +35,55 @@ tr:hover {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
 
+/* SPLIT LAYOUT (ONLY WHERE NEEDED) */
+.split {
   display: flex;
   gap: 20px;
-  animation: fadeIn 1s ease;
 }
 
 .left, .right {
   width: 50%;
 }
 
-/ Footer /
-footer {
+/* TEXT */
+h1, h2 {
   text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  background: #020617;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+h1 {
+  color: #38bdf8;
 }
+
+h2 {
+  color: #60a5fa;
+}
+
+p {
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+  margin-top: 20px;
+}
+
+/* MOBILE FIX */
 @media (max-width: 768px) {
-  .container {
+  .split {
     flex-direction: column;
   }
 
   .left, .right {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
   }
 }
