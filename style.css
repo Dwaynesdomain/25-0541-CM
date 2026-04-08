@@ -1,68 +1,79 @@
-/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0f172a, #020617);
-  color: #f1f5f9;
-  line-height: 1.6;
+  background: linear-gradient(to right, #020617, #0a1f44);
+  color: white;
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
   background: #020617;
-  padding: 12px;
-  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
 nav a {
-  color: #f1f5f9;
-  margin: 0 15px;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #38bdf8;
-  transform: scale(1.1);
+  color: cyan;
 }
 
 /* CONTAINER */
 .container {
-  max-width: 1000px;
-  margin: 40px auto;
   background: #1e293b;
-  padding: 30px;
+  margin: 20px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* SPLIT LAYOUT (ONLY WHERE NEEDED) */
-.split {
+/* COLUMNS */
+.columns {
   display: flex;
   gap: 20px;
 }
 
-.left, .right {
-  width: 50%;
+.columns div {
+  flex: 1;
 }
 
-/* TEXT */
-h1, h2 {
-  text-align: center;
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-h1 {
-  color: #38bdf8;
+th, td {
+  border: 1px solid white;
+  padding: 10px;
 }
 
-h2 {
-  color: #60a5fa;
+th {
+  background: #0a1f44;
 }
 
-p {
-  max-width: 700px;
-  margin: 15px auto;
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 10px;
 }
 
 /* FOOTER */
@@ -70,20 +81,26 @@ footer {
   text-align: center;
   padding: 15px;
   background: #020617;
-  margin-top: 20px;
 }
 
-/* MOBILE FIX */
+/* EXTERNAL CSS */
+.highlight-external {
+  color: purple;
+  text-decoration: underline;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  .split {
+  .columns {
     flex-direction: column;
   }
 
-  .left, .right {
+  .gallery img {
     width: 100%;
   }
+}
 
-  h1 {
-    font-size: 28px;
-  }
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
 }
