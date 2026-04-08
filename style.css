@@ -36,6 +36,7 @@ nav a:hover {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
+  animation: fadeIn 1s ease-in;
 }
 
 /* COLUMNS */
@@ -74,6 +75,41 @@ th {
 .gallery img {
   width: 30%;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* BOOKING FORM */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.booking-form button {
+  padding: 12px;
+  background: cyan;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -97,6 +133,17 @@ footer {
 
   .gallery img {
     width: 100%;
+  }
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
   }
 }
 
