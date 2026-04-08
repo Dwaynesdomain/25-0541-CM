@@ -1,4 +1,4 @@
-/* Reset /
+/* Reset */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,7 +8,7 @@ body {
   padding: 15px;
 }
 
-/ Navbar /
+/* Navbar */
 nav {
   background: #020617;
   padding: 12px;
@@ -28,7 +28,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/ Headings /
+/* Headings */
 h1, h2 {
   text-align: center;
 }
@@ -42,13 +42,13 @@ h2 {
   color: #60a5fa;
 }
 
-/ Paragraphs /
+/* Paragraphs */
 p {
   max-width: 700px;
   margin: 15px auto;
 }
 
-/ Images /
+/* Images */
 img {
   max-width: 100%;
   height: auto;
@@ -65,14 +65,14 @@ img {
   transform: scale(1.1);
 }
 
-/ Video /
+/* Video */
 video {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-/ Table /
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -92,7 +92,7 @@ tr:hover {
   background: #1e293b;
 }
 
-/ Container /
+/* Container */
 .container {
   max-width: 1000px;
   margin: 40px auto;
@@ -118,7 +118,7 @@ footer {
   background: #020617;
 }
 
-/ Animations */
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
